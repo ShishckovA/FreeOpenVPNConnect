@@ -1,6 +1,7 @@
+import os
+os.system('notify-send "Connecting to VPN..."')
 from get_password import get_password_for_region
 import requests
-import os
 
 FILENAME = "pass.txt"
 USERNAME = "freeopenvpn"
