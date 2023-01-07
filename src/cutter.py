@@ -1,11 +1,14 @@
-from PIL import Image
 import os
-import string, random
+import random
+import string
+
+from PIL import Image
 
 
 def rnd_str():
     alph = string.hexdigits
     return "".join([random.choice(alph) for i in range(10)]).lower()
+
 
 def cut_image(img):
     w, h = img.size
@@ -15,6 +18,7 @@ def cut_image(img):
         cim = img.crop((i, 0, i + step, h))
         res.append(cim)
     return res
+
 
 if __name__ == "__main__":
     image_types = [

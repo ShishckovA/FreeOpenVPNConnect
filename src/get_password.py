@@ -1,7 +1,6 @@
 from model import get_model, predict
-from cutter import cut_image
+from src.cutter import cut_image
 import requests
-import os
 import io
 from PIL import Image
 from collections import Counter

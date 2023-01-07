@@ -1,14 +1,18 @@
+import random
+import string
+
 import requests
-import string, random
+
 
 def rnd_str():
     alph = string.hexdigits
-    return "".join([random.choice(alph) for i in range(10)]).lower()
+    return "".join([random.choice(alph) for _ in range(10)]).lower()
+
 
 images = [
     [
         "679046356",
-        "https://www.freeopenvpn.org/img/password.php?iPUfU7505", 
+        "https://www.freeopenvpn.org/img/password.php?iPUfU7505",
         "https://www.freeopenvpn.org/premium.php?cntid=Germany&lang=en"
     ],
     [
@@ -17,7 +21,6 @@ images = [
         "https://www.freeopenvpn.org/premium.php?cntid=USA&lang=en"
     ]
 ]
-
 
 i = 0
 while 1:
